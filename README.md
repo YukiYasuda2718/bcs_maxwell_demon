@@ -15,7 +15,7 @@
 
 ## Mac (only for apple silicon)
 
-1. 環境変数 (`.env`) の作成: `$ ./make_env.sh`
+1. Make `.env`: `$ ./make_env.sh`
 2. Install [docker](https://www.docker.com)
 3. Build a container image: `$ docker compose build pytorch_mac`
 4. Start a container: `$ docker compose up -d pytorch_mac`
