@@ -1,7 +1,10 @@
+- [Description](#description)
 - [Build environment](#build-environment)
   - [Linux (including WSL)](#linux-including-wsl)
   - [Mac (only for apple silicon)](#mac-only-for-apple-silicon)
 - [Plot figures](#plot-figures)
+
+# Description
 
 This repository contains all data and source code used in "Interpretation of the Boundary Current Synchronization as a Maxwell's Demon" by Yuki Yasuda and Tsubasa Kohyama.
 
