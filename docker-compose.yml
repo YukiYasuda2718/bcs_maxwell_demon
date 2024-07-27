@@ -2,27 +2,16 @@ version: "3"
 services:
   pytorch_linux:
     user: "${UID}:${GID}"
-    shm_size: "10gb"
+    shm_size: "5gb"
     build:
       context: ./docker/pytorch_linux
-      args:
-        - http_proxy
-        - https_proxy
-        - HTTP_PROXY
-        - HTTPS_PROXY
     tty: true
     ports:
       - "9999:8888"
     environment:
-      - http_proxy
-      - https_proxy
-      - HTTP_PROXY
-      - HTTPS_PROXY
       - PYTHONPATH=/workspace/python
     volumes:
       - ./data:/workspace/data:cached
-      - ./reports:/workspace/reports:cached
-      - ./docs:/workspace/docs:cached
       - ./python:/workspace/python:cached
     command: poetry run jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token=''
   pytorch_mac:
@@ -32,13 +21,11 @@ services:
       context: ./docker/pytorch_mac
     tty: true
     ports:
-      - "8888:8888"
+      - "7777:8888"
     environment:
       - PYTHONPATH=/workspace/python
     volumes:
       - ./data:/workspace/data:cached
-      - ./reports:/workspace/reports:cached
-      - ./docs:/workspace/docs:cached
       - ./python:/workspace/python:cached
     command: poetry run jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token=''
  
