@@ -49,7 +49,7 @@ This repository contains all data and source code used in "A Mechanism of Stocha
   volume = "38",
   number = "7",
   doi = "10.1175/JCLI-D-24-0436.1",
-  pages=      "1573 - 1594",
+  pages= "1573 - 1594",
   url = "https://journals.ametsoc.org/view/journals/clim/38/7/JCLI-D-24-0436.1.xml"
 }
 ```
